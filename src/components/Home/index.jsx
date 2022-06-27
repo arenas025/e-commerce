@@ -1,8 +1,8 @@
-import Layout from '../Layout'
+import Product from "../Product"
 const Home = () => {
     return(
         <div className='home'>
-            Home
+            <Product/>
         </div>
     )
 }
