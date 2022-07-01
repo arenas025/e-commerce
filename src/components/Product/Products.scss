@@ -1,0 +1,31 @@
+.product{
+    margin: 10px auto;
+    & img{
+        width:fit-content;
+        border-radius: 5px;
+        max-width: 200px;
+        min-width: 100px;
+    }
+    &--info{
+        &__name{
+            margin: 0;
+        }
+        &__price{
+            margin: 0;
+        }
+    }
+    &--button{
+        background-color: aqua;
+        width: 150px;
+        transition: 1s;
+        &:hover{
+            background-color: azure;
+        }
+        & button{
+            background-color: yellow;
+            &:hover{
+                background-color: blue;
+            }
+        }
+    }
+}

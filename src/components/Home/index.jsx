@@ -1,8 +1,9 @@
-import Product from "../Product"
+import Products from "../Products"
+
 const Home = () => {
     return(
         <div className='home'>
-            <Product/>
+            <Products/>
         </div>
     )
 }
