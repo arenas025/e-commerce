@@ -2,4 +2,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
     margin: 20px 0 70px 0;
+    justify-items: center;
+}
+
+.productNotFound{
+    width: 200px;
+    position: absolute;
+    background-color: #ff9671;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    border-radius: 100px;
 }

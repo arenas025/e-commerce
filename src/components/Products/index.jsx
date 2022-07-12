@@ -1,13 +1,35 @@
 import './Products.scss'
-import { products,cart,buyers } from "../../utils/api"
 import Product from '../Product'
+import { FaRegSadTear } from "react-icons/fa";
+import { useContext } from 'react';
+import Context from '../../context/Context';
 
 const Products = () => {
+    
+    let search = []
+
+    const {searcherValue, state} = useContext(Context)
+
+    const value = searcherValue
+
+    const products = state.products
+    
+    value === undefined ? search = [...products] : search = products.filter(item=> {
+        return item.name.toLowerCase().includes(value.toLowerCase());
+    })
+
     return(
     <div className='products'>
-        {products.map(product=>(
-            <Product product={product}/>
+        {search.map(product=>(
+            <Product product={product} />
         ))}
+        {search.length === 0 &&
+        <div className='productNotFound'>
+            <p>
+            Ups, it seems we don't have that product
+            </p>
+            <FaRegSadTear/>
+        </div>}
     </div>
     )
 }
