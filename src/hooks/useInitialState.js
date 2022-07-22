@@ -11,31 +11,35 @@ const useInitialState = () => {
 			...state,
 			cart:[...state.cart,payload]
 		})
-		console.info('sirvió')
 	}
 
-	// console.info(`cart: ${cart}`)
-
-	// const removeFromCart = payload => {
-	//     setCartState(
-	// need to think about it
-	//     )
-	// }
+	const removeFromCart = payload => {
+		const stateSorted = state.cart.sort((a,b)=> a-b )
+		const index = stateSorted.findIndex(item => item === payload)
+		stateSorted.splice(index,1)
+		setState({
+			...state,
+			cart:[...stateSorted]
+		})
+	}
 
 	const addBuyer = payload => {
 		setState({
-			state: [...state.buyers, payload]
+			...state,
+			buyer: [...state.buyer, payload]
 		})
 	}
 
 	const handleSearcherValue = value => {
 		setSearcherValue(value)
 	}
+
 	return {
 		addToCart,
 		addBuyer,
 		searcherValue,
 		handleSearcherValue,
+		removeFromCart,
 		state
 	}
 }

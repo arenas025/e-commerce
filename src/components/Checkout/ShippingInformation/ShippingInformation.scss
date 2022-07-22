@@ -1,0 +1,35 @@
+.shippingInformation{
+    padding: 0 10px;
+    &--form{
+        // display: flex;
+        // flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+        & input{
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            height: 30px;
+            border: 1px solid gainsboro;
+            background-color: ghostwhite;
+        }
+    }
+    &--submit{
+        background-color:#3D9845;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        & p{
+            color: white;
+            margin: 0;
+            font-family: 'Mulish', sans-serif;
+        }
+        & svg{
+            fill: white;
+            margin-right: 5px;
+        }
+    }
+}

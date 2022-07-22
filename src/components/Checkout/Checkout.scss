@@ -1,7 +1,12 @@
 .checkout{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    position: relative;
+    padding: 0px 10px;
+    &--title{
+        font-family: 'Mulish', sans-serif;
+        margin-bottom: 10px;
+    }
     &--notFound{
         width: 200px;
         position: absolute;
@@ -12,18 +17,36 @@
         display: flex;
         align-items: center;
         padding: 5px;
+        align-self: center;
         margin-top: 20px;
         & p{
             color: white
         }
     }
-    &--products{
-        margin-top: 20px;
-        align-self: flex-start;
-        &__card{
-            & img{
-                width: 50px;
-                border-radius: 10px;
+    &--checkout{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__total{
+            font-family: 'Mulish', sans-serif;
+            font-weight: bold;
+        }
+        &__button{
+            height: fit-content;
+            width: 100px;
+            background-color:#3D9845;
+            display: flex;
+            align-content: center;
+            justify-content: space-evenly;
+            border-radius: 5px;
+            padding: 5px;
+            & svg{
+                stroke: white;
+            }
+            & p{
+                font-family: 'Mulish', sans-serif;
+                color: white;
+                margin: 0;
             }
         }
     }

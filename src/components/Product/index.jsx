@@ -20,7 +20,7 @@ const Product = ({product}) => {
             </div>
             <div className='product--button' onClick={()=>handleAddToCart(product)}>
                 <BsCartCheck className="product--button__icon"/>
-                <button>¡Me lo llevo!</button>
+                <button>Add to cart! </button>
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 export default {
     cart : [],
-    buyers : [], 
+    buyer : [], 
     products : [
         {
             "id": "5ec5acbd-c47d-4bea-ab30-ef6205f23382",

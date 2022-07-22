@@ -5,7 +5,7 @@ import {} from 'react'
 import './App.scss'
 import useInitialState from './src/hooks/useInitialState'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import Information from './src/components/Checkout/Information'
+import ShippingInformation from './src/components/Checkout/ShippingInformation'
 import Checkout from './src/components/Checkout'
 
 const App = () => {
@@ -19,6 +19,7 @@ const App = () => {
                     <Routes>
                         <Route path='/' element={<Home/>}/> 
                         <Route path='/checkout/' element={<Checkout/>}/>
+                        <Route path='/information' element={<ShippingInformation/>}/>
                     </Routes>
                 </Layout>
             </BrowserRouter>
