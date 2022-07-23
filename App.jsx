@@ -7,6 +7,7 @@ import useInitialState from './src/hooks/useInitialState'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import ShippingInformation from './src/components/Checkout/ShippingInformation'
 import Checkout from './src/components/Checkout'
+import OrderSummary from './src/components/Checkout/OrderSummary'
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
                         <Route path='/' element={<Home/>}/> 
                         <Route path='/checkout/' element={<Checkout/>}/>
                         <Route path='/information' element={<ShippingInformation/>}/>
+                        <Route path ='/summary' element ={<OrderSummary/>}/>
                     </Routes>
                 </Layout>
             </BrowserRouter>

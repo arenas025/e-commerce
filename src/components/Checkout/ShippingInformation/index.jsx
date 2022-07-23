@@ -3,9 +3,10 @@ import { useContext } from 'react'
 import './ShippingInformation.scss'
 import Context from '../../../context/Context'
 import { GiConfirmed } from "react-icons/gi";
+import { Link } from 'react-router-dom';
 
 const ShippingInformation = () => {
-    const {state, addBuyer} = useContext(Context)
+    const {addBuyer} = useContext(Context)
 
     const ref = useRef()
     const handleSubmit = () => {
@@ -21,7 +22,6 @@ const ShippingInformation = () => {
         }
         addBuyer(buyer)
     }
-    console.info(state.buyer)
     return(
         <div className="shippingInformation">
             <p>Shipping Information</p>
@@ -34,10 +34,12 @@ const ShippingInformation = () => {
                 <input type='text' placeholder='State' name='state'/>
                 <input type='text' placeholder='City' name='city'/>
             </form>
+            <Link to='/summary'>
             <div onClick={handleSubmit} className='shippingInformation--submit'>
                 <GiConfirmed/>
                 <p>Confirm</p>
             </div>
+            </Link>
         </div>
     )
 }

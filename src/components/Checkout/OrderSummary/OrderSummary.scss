@@ -1,0 +1,59 @@
+.orderSummary{
+    padding: 0 10px;
+    & > p{
+        font-weight: bold;
+        font-family: 'Mulish', sans-serif;
+        font-size: 25px;
+    }
+    &--products{
+        &__title{
+            font-family: 'Mulish', sans-serif;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        & > div{
+            width: fit-content;
+            height: 50px;
+            & p{
+                margin: 0;
+            }
+            & img{
+                width: 50px;
+                object-fit: cover;
+            }
+            & div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: fit-content;
+                & div{
+                    display: none;
+                }
+            }
+        }
+        &__total{
+            font-weight: bold;
+            font-family: 'Mulish', sans-serif;
+            margin-top: 20px;
+        }
+    }
+    &--information{
+        &__title{
+            font-family: 'Mulish', sans-serif;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        & section{
+            display: flex;
+            & p{
+                font-family: 'Mulish', sans-serif;
+            }
+            & p:first-child{
+                font-weight: bold;
+                margin-right: 2px;
+            }
+        }
+    }
+}
