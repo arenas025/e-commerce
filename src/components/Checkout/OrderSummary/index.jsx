@@ -38,7 +38,7 @@ const OrderSummary = () => {
                     </section>
                     <section className='orderSummary--information__country'>
                         <p>Address: </p>
-                        <p>{item.country} {item.state} {item.city}</p>
+                        <p>{`${item.country} / ${item.state} / ${item.city}`}</p>
                     </section>
                     </>
                 ))}
