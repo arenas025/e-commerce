@@ -17,7 +17,7 @@
         }
     }
     &--button{
-        background-color: #3D9845;
+        background-color: #f5c744;
         width:fit-content;
         padding: 3px 10px;
         transition: 1s;
@@ -30,7 +30,7 @@
             background-color: transparent;
             & .product--button__icon{
                 transform: translateX(80px);
-                fill: #3D9845 ;
+                fill: #f5c744 ;
             }
             & button{
                 transform: scaleX(0);

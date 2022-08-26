@@ -23,7 +23,9 @@ const Header = () => {
     return (
         <div className="header">
             <Link to='/'>
-                <FcShop className="header--logo"/>
+                <div className="header--logo">
+                    
+                </div>
             </Link>
             <section className="header--searcher">
                 <input onChange={updateSeacherValue} ref={ref} placeholder="Busca tu producto"/>
