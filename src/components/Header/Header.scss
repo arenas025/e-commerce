@@ -1,23 +1,23 @@
 .header{
-    background-color: #bbfcfe;
+    background-color:white;
     padding: 0 20px;
     display: flex;
     height: 100px;
     align-items: center;
     justify-content: space-between;
     &--logo{
-        width: 80px;
+        width: 120px;
         height: 80px;
-        background-image: url('../../fondo\ CORSO.PNG');
+        background-image: url('../../components/Product/logo-diego.png');
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         border-radius: 100%;
-        border: 1px solid blue;
+        background-repeat: no-repeat;
     }
     &--searcher{
         background-color: white;
         border-radius: 50px;
-        border: 1px solid blue;
+        border: 1px solid #00cb75;
         width: 60%;
         display: flex;
         height: 10px;
@@ -43,10 +43,10 @@
         &__icon{
             width: 20px;
             height: 20px;
-            fill: blue;
+            fill: #00cb75;
         }
         &__counter{
-            background: blue;
+            background: #02aa95;
             width: 15px;
             color: white;
             height: 15px;

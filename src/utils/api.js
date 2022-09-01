@@ -6,18 +6,52 @@ export default {
     products : [
         {
             "id": "5ec5acbd-c47d-4bea-ab30-ef6205f23382",
-            "name": "Jabón liquido",
-            "price": 4800,
+            "name": "Buzo (Hoodie)",
+            "price": 75000,
             "isBlock": false,
-            "image":'https://t2.ev.ltmcdn.com/es/posts/2/2/7/como_hacer_jabon_liquido_casero_2722_orig.jpg'
+            "description": {
+                'materials':['Algodón perchado Mónaco de 280 gramos (No se motosea ni se destiñe)'],
+                'print':['DTF ( Digital transfer film ): La última tecnología en estampados llegó para quedarse. Esta técnica de estampados es perfecta para tus diseños full color, y diseños que requieren un corte exterior complejo. Calidad premium aguanta hasta más de 80 lavadas. Tamaño máximo A3  ( 29 cms x 39 cms )', 'Vinilos textiles: nos permite ofrecerte diseños con acabados finos y una calidad máxima por su resistencia y durabilidad a las lavadas. Disponibles en gran variedad de colores.']
+                
+            },
+            "image":'https://obandox.com/wp-content/uploads/2021/04/BUZO.png'
         },
         {
             "id": "1a7f09ca-4146-4f02-8738-b50268e4af92",
-            "name": "Jabón en barra",
-            "price": 3600,
+            "name": "Camiseta básica",
+            "price": 40000,
+            "description": {
+                'materials':['Algodón combinado con fibra biodegradable de bambo o guadua'],
+                'print':[]
+                
+            },
             "isBlock": false,
-            "image": 'https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/06/truco-para-conservar-jabones.jpg'
-        }
+            "image": 'https://assets-global.website-files.com/5ccc8aa73871f9d12dc81c1b/613bc03addb875c5478dd4d8_2572.jpg'
+        },
+        {
+            "id": "52ea5eb7-32f4-40e0-99ba-98d52d3f4d01",
+            "name": "Pantalón licrado deportivo",
+            "price": 55000,
+            "isBlock": false,
+            "description": {
+                'materials':['Algodón, spandex 5% y elastano 5%'],
+                'print':[]
+                
+            },
+            "image": "https://cdn.shopify.com/s/files/1/2100/3755/products/3_4-Length-Active-Tights-Front_1.jpg?v=1554241705"
+            },
+            {
+            "id": "9e00f4f4-739e-4113-829a-1b77a6f9d836",
+            "name": "Conjunto deportivo para mujer",
+            "price": 130000,
+            "description": {
+                'materials':['Aldogón monaco'],
+                'print':[]
+                
+            },
+            "isBlock": false,
+            "image": "https://cdn.shopify.com/s/files/1/2445/4975/products/2620006_Second_Spin_Jogger_Sweatpants_CRY_D2_1440x.jpg?v=1629167755"
+            },
     ]
 }
 
